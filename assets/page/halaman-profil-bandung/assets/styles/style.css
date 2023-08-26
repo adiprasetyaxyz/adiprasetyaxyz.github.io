@@ -1,0 +1,139 @@
+body {
+    font-family: "Quicksands", sans-serif;
+  }
+   
+h2, h3 {
+    color: #00a2c6;
+  }
+   
+  footer {
+    padding: 20px;
+    color: white;
+    background-color: #00a2c6;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    
+  }
+
+  nav a:hover {
+    font-weight: bold;
+    color: blue;
+  }
+
+    .profile {
+        text-align: center;
+
+  }
+
+  .featured-image {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+   
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #00c8eb;
+    text-align: center;
+    color: white;
+  }
+  nav li {
+    
+    list-style-type: none;
+    margin-right: 20px;
+    color: white; 
+  }
+/* Menambahkan display flex pada container */
+  nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav {
+    padding: 5px;
+    background-color: #00a2c6;
+    position: sticky;
+    top: 0;
+    left: 0;
+    
+  }
+  header {
+    display: inline;
+  }
+
+  article {
+    padding: 20px 10px;
+  }
+
+  /* menambahkan display flex pada container dan tambah gap */
+  main {
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    gap: 1.5rem;
+  }
+  /* pada child element tambahkan flex : (1-6) */
+  #content { 
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    /* Pada kode CSS di atas, seperti properti flex, kita menemukan lagi properti shorthand lainnya,
+     yaitu flex-flow. Properti tersebut mencakupi dua buah properti, 
+     yaitu flex-direction dan flex-wrap */
+    gap: 1rem 2rem;
+  }
+  aside {
+  flex: 1;
+  }
+  #table {
+    margin: 0 auto;
+    text-align: center;
+  }
+  table {
+    margin: 0 auto;
+    text-align: left;
+    border-style: solid;
+    border: #011013;
+    border-width: 1px;
+  }
+  figure > img {
+    max-width: 150px;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 1200px) {
+    main {
+      flex-flow: column nowrap;
+    }
+   
+    main aside {
+      align-self: center;
+    }
+  }
+   
+  @media screen and (max-width: 768px) {
+    nav ul {
+      justify-content: center;
+    }
+   
+    main aside {
+      align-self: stretch;
+    }
+  }
